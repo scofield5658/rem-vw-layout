@@ -1,0 +1,7 @@
+{
+  "name": "rem-vw-layout",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
