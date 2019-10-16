@@ -2,6 +2,13 @@
   "name": "rem-vw-layout",
   "license": "MIT",
   "scripts": {
+    "build:rem": "node-sass --output-style compressed rem/scss/rem.scss --output rem/css ",
+    "build:vw": "node-sass --output-style compressed vw/scss/vw.scss --output vw/css ",
+    "build:vw-rem": "node-sass --output-style compressed vw-rem/scss/vw-rem.scss --output vw-rem/css ",
+    "build": "npm run build:rem && npm run build:vw && npm run build:vw-rem",
     "start": "node server.js"
+  },
+  "devDependencies": {
+    "node-sass": "^4.12.0"
   }
 }
